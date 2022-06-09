@@ -1,0 +1,230 @@
+li {
+  list-style: none;
+}
+
+.wf-btn {
+  background-color: rgb(36 77 228 / 63%);
+  color: #fff;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.wf-body-class {
+  color: #000;
+  padding: 20px;
+  border: 1px solid grey;
+  height: 100%;
+}
+
+.wf-header-wrapper {}
+
+.wf-header-header-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.wf-header-nav-wrapper,
+.wf-header-nav-wrapper ul,
+.wf-header-nav-wrapper ul li,
+.wf-header-header-right {
+  display: inline-flex;
+}
+
+.wf-header-nav-wrapper {
+  width: calc(100% - 150px);
+}
+
+.wf-header-header-right {
+  width: 150px;
+}
+
+.wf-header-nav-links {
+  padding: 0;
+}
+
+.wf-header-nav-link {
+  margin-right: 5px;
+}
+
+li.wf-header-nav-link::after {
+  content: "|";
+  margin-left: 5px;
+}
+
+li.wf-header-nav-link:last-child::after {
+  content: "";
+  margin-left: 0px;
+}
+
+.wf-header-nav-link a {
+  text-decoration: none;
+}
+
+.wf-header-wrapper,
+.wf-body-wrapper,
+.wf-footer-wrapper {
+  border: 1px dotted lightgray;
+  /* remove this once layout is stable. */
+  padding-top: 5px;
+}
+
+.wf-header-wrapper {
+  height: 72px;
+}
+
+.wf-body-wrapper {
+  height: calc(100vh - 180px);
+  overflow: auto;
+  max-height: calc(100vh - 180px);
+  position: relative;
+}
+
+.wf-footer-wrapper {
+  height: 42px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.wf-footer {
+  margin: 0 auto;
+  position: relative;
+  width: auto;
+}
+
+.wf-add-wf-btn-wrapper {
+  width: 100%;
+  height: 40px;
+}
+
+.wf-add-wf-btn {
+  right: 25px;
+  top: 10px;
+  float: right;
+  position: relative;
+}
+
+.wf-list-ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  border-top: 1px solid #000;
+}
+
+.wf-list-ul li {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.wf-name-heading.wf-name,
+.wf-status-heading.wf-status {
+  font-weight: 900;
+}
+
+.wf-name,
+.wf-status {
+  min-width: 50%;
+}
+
+.wf-list-table-header {
+  border-bottom: 1px solid #000;
+  margin-bottom: 10px;
+}
+
+.wf-table-row.wf-table-row-open {
+  background-color: rgb(185 224 32 / 20%);
+}
+
+.wf-table-row.wf-table-row-in-progress {
+  background-color: rgb(128 0 128 / 20%);
+}
+
+.wf-table-row.wf-table-row-pending {
+  background-color: rgba(0, 128, 0, 0.2);
+}
+
+.wf-table-row.wf-table-row-approved {
+  background-color: rgb(68 212 68 / 70%);
+}
+
+.wf-table-row.wf-table-row-rejected {
+  background-color: rgb(255 0 0 / 50%);
+}
+
+
+.wf-list-wrapper {
+  margin: 10px;
+  border: 1px solid #000;
+}
+
+.wf-list-heading {
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+.wf-hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.wf-worflow-form-wrapper {
+  border: 1px solid #000;
+  padding: 12px;
+  margin: 12px;
+}
+
+.wf-worflow-form {
+  /* display: flex;
+  align-items: center;
+  flex-direction: column; */
+  width: 100%;
+}
+
+.wf-worflow-form-control {
+  width: 100%;
+  height: 42px;
+}
+
+.wf-worflow-form-control:last-child {
+  height: 26px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.wf-worflow-form-control label {
+  width: 50%;
+}
+
+.wf-worflow-form-control input {
+  width: 47%;
+}
+
+.wf-worflow-form-control select {
+  width: 48%;
+}
+
+.wf-worflow-form-control label,
+.wf-worflow-form-control input,
+.wf-worflow-form-control select,
+.wf-worflow-form-control button {
+  display: inline-block;
+}
+
+.wf-worflow-form-control input,
+.wf-worflow-form-control select {
+  border: 1px dotted lightgray;
+  border-bottom: 2px solid #0000ff42;
+}
+
+.wf-worflow-form-control input:focus,
+.wf-worflow-form-control input:active,
+.wf-worflow-form-control input:focus-visible,
+.wf-worflow-form-control select:focus-visible {
+  border: 1px dotted lightgray;
+  border-bottom: 2px solid #0000ff88;
+  outline: none;
+}
